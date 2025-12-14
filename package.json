@@ -1,13 +1,37 @@
 {
   "name": "supabase-next-helpers",
   "version": "0.1.0",
-  "module": "src/index.ts",
+  "description": "Type-safe Supabase helpers for Next.js applications",
   "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
   "scripts": {
-    "build": "bun build src/index.ts --outdir dist --target node",
     "clean": "rm -rf node_modules",
     "check": "npx ultracite@latest check",
-    "fix": "npx ultracite@latest fix"
+    "fix": "npx ultracite@latest fix",
+    "prepublishOnly": "bun run check"
+  },
+  "keywords": [
+    "supabase",
+    "next.js",
+    "nextjs",
+    "typescript",
+    "helpers",
+    "auth",
+    "storage"
+  ],
+  "author": "reactivesilicon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactivesilicon/supabase-next-helpers"
   },
   "packageManager": "bun@latest",
   "dependencies": {
@@ -24,5 +48,8 @@
   "peerDependencies": {
     "typescript": "^5",
     "next": "^16.0.10"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

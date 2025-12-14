@@ -1,15 +1,20 @@
 # supabase-next-helpers
 
-To install dependencies:
+Personal helper library for Supabase + Next.js with type-safe metadata validation.
+
+## Install
 
 ```bash
-bun install
+bun install supabase-next-helpers
 ```
 
-To run:
+## What's in it
 
-```bash
-bun run index.ts
-```
+- Client creators for browser, server, middleware, and admin contexts
+- Auth helpers with Zod validation for app/user metadata
+- Storage upload/download helpers
+- Error utilities
 
-This project was created using `bun init` in bun v1.3.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## License
+
+MIT
