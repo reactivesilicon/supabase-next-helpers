@@ -11,7 +11,7 @@ type SupabaseAdminClientOptions = {
  * - NEVER! expose the service role key to the client side, as it has full access to your database.
  * - NEVER! use this client in client-side code.
  */
-export default function createAdminClient({
+export function createAdminClient({
   url,
   serviceRoleKey,
 }: SupabaseAdminClientOptions): SupabaseClient {

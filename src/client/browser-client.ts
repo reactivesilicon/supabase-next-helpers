@@ -5,7 +5,7 @@ type SupabaseBrowserClientOptions = {
   supabasePublicKey: string;
 };
 
-export default function createBrowserClient({
+export function createBrowserClient({
   supabaseUrl,
   supabasePublicKey,
 }: SupabaseBrowserClientOptions) {
